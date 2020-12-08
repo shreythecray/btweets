@@ -15,7 +15,7 @@ var T = new Twit({
 });
 
 
-T.get('search/tweets', { q: 'bts', count: 1 }, async (err, data, response) => {
+T.get('search/tweets', { q: '@bts_twt', count: 1 }, async (err, data, response) => {
   const accountSid =  '[insert your account SID here]'
   const authToken  =  '[insert your auth token here]'
   const client = require('twilio')(accountSid, authToken);
